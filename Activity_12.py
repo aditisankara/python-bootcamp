@@ -23,8 +23,6 @@ def main():
     integers = map(int, numbers)
     n = list(integers)
 
-    print(n)
-
     g = greatest(n[0], n[1], n[2])
     display(g, n[0], n[1], n[2])
 
