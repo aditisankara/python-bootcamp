@@ -3,10 +3,6 @@ def ip_numbers():
     ip = input("input numbers: ")
     return ip
 
-def to_integer(x):
-    x = int(x)
-    return x
-
 def greatest(a, b, c):
     #to compare three values
     if a >= b and a >= c:
@@ -24,8 +20,10 @@ def display(l, a, b, c):
 def main():
     ip_line = ip_numbers()
     numbers = ip_line.split(' ')
-    integers = map(to_integer, numbers)
+    integers = map(int, numbers)
     n = list(integers)
+
+    print(n)
 
     g = greatest(n[0], n[1], n[2])
     display(g, n[0], n[1], n[2])
