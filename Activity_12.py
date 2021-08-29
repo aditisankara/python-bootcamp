@@ -13,6 +13,11 @@ def greatest(a, b, c):
         l = c
     return l
 
+def greatest_ternary(a, b, c):
+    #to compare three values
+    l = a if (a >= b and a >= c) else b if (b >= a and b >= c) else c
+    return l
+
 def display(l, a, b, c):
     #to display greatest of three numbers
     print(l, "is the greatest number among ", a, ",", b, "and", c)
